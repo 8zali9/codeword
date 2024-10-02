@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>codeword</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1>codeword</h1>
+    <div id="main">
+        <canvas id="whiteboard"></canvas>
+        <div id="message-sidebar">
+            <div id="msgs"></div>
+            <input type="text" id="ipt" placeholder="message here..." required>
+            <button id="btn">Send</button>
+        </div>
+    </div>
+</body>
+<script src="/socket.io/socket.io.js"></script>
+<script src="./scripts//messages.js"></script>
+<script src="./scripts/whiteboard.js"></script>
+</html>

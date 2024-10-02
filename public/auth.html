@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>codeword | auth</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <form action="/auth" method="post">
+        <legend>codeword</legend>
+        <input type="text" name="username" id="username" placeholder="user name" required>
+        <span id="name-error"></span>
+        <input type="password" name="code" id="code" placeholder="code" required>
+        <span id="code-error"></span>
+        <button disabled id="auth-btn" type="submit">join</button>
+    </form>
+</body>
+<script src="./scripts/set-username.js"></script>
+</html>
